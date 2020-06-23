@@ -1,0 +1,13 @@
+<h1>Show Property</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @property.name %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.property_path(@conn, :edit, @property) %></span>
+<span><%= link "Back", to: Routes.property_path(@conn, :index) %></span>

@@ -1,0 +1,26 @@
+<h1>Listing Properties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for property <- @properties do %>
+    <tr>
+      <td><%= property.name %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.property_path(@conn, :show, property) %></span>
+        <span><%= link "Edit", to: Routes.property_path(@conn, :edit, property) %></span>
+        <span><%= link "Delete", to: Routes.property_path(@conn, :delete, property), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Property", to: Routes.property_path(@conn, :new) %></span>

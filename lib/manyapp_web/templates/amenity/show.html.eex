@@ -1,0 +1,13 @@
+<h1>Show Amenity</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @amenity.name %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.amenity_path(@conn, :edit, @amenity) %></span>
+<span><%= link "Back", to: Routes.amenity_path(@conn, :index) %></span>

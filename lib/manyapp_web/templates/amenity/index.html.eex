@@ -1,0 +1,26 @@
+<h1>Listing Amenities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for amenity <- @amenities do %>
+    <tr>
+      <td><%= amenity.name %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.amenity_path(@conn, :show, amenity) %></span>
+        <span><%= link "Edit", to: Routes.amenity_path(@conn, :edit, amenity) %></span>
+        <span><%= link "Delete", to: Routes.amenity_path(@conn, :delete, amenity), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Amenity", to: Routes.amenity_path(@conn, :new) %></span>

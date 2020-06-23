@@ -1,0 +1,5 @@
+<h1>Edit Amenity</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.amenity_path(@conn, :update, @amenity)) %>
+
+<span><%= link "Back", to: Routes.amenity_path(@conn, :index) %></span>
