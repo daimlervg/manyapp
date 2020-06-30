@@ -1,18 +1,21 @@
 # Manyapp
 
-To start your Phoenix server:
+Elixir project with Phoenix using  multi-select checkboxes for Many to many associations
 
+To run the project :
+  * git clone https://github.com/daimlervg/manyapp.git
   * Setup the project with `mix setup`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Ready to run?
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+Now you can visit (http://localhost:4000/Amenity) from your browser:
 
-## Learn more
+Create childs(amenities) and after create a parent (property) http://localhost:4000/Property
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+## Credits
+
+Data sources which provided code:  
+
+* `Ricardo Ruwer`:  https://dev.to/ricardoruwer/many-to-many-associations-in-elixir-and-phoenix-21pm 
+
